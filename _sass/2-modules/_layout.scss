@@ -1,0 +1,45 @@
+body {
+  	padding: 1em;
+
+  	@include media ($small-screen-down) {
+			padding: 0;
+		}
+}
+
+main {
+
+}
+header {
+	@include outer-container;
+	padding: 2em;
+
+	@include media ($small-screen-down) {
+		padding: 0;
+		}
+}
+
+.wrapper {
+	@include row();
+  margin: 10% 0;
+	.outer-container {
+		@include outer-container;
+		width: 30em;
+
+		@include media ($medium-screen-down) {
+			width: 25em;
+			}
+
+		@include media ($small-screen-down) {
+			width: 20em;
+		}
+	}
+}
+
+section {
+
+}
+
+
+.content {
+
+}
